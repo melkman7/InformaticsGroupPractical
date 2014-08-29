@@ -1,6 +1,6 @@
-##InformaticsGroupPractical
+### InformaticsGroupPractical
 
-###Mpho:  
+#### Mpho:  
 * Shopping Cart
 * Transaction Processing  
 
