@@ -1,6 +1,8 @@
 InformaticsGroupPractical
-=========================
-* Mpho: Shopping Cart + Transaction Processing
+-------------------------
+* Mpho: 
+* 
+* Shopping Cart + Transaction Processing
 
 * Jarryd: Product Management
 
