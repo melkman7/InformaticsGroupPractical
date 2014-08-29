@@ -6,7 +6,7 @@
   - - - -  
 #### Jarryd:
 * Product Management
----
+
 #### Tyson: 
 * Product Catalogue
 
