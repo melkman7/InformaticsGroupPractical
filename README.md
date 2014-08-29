@@ -1,6 +1,7 @@
 InformaticsGroupPractical
 =========================
-Mpho: Shopping Cart + Transaction Processing \r\n
+Mpho: Shopping Cart + Transaction Processing
+=========================
 Jarryd: Product Management
 Tyson: Product Catalogue
 Jacques: User Management
