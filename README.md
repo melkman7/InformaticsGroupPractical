@@ -2,8 +2,8 @@
 * * *
 #### Mpho:
 * Shopping Cart
-* Transaction Processing  
-- - - -
+* Transaction Processing
+  - - - -  
 #### Jarryd:
 * Product Management
 ---
