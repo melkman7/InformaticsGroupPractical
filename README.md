@@ -2,9 +2,12 @@ InformaticsGroupPractical
 ====
 Mpho:  
 ----
-* Shopping Cart + Transaction Processing
+* Shopping Cart
+* Transaction Processing  
 
-* Jarryd: Product Management
+Jarryd:
+----
+* Product Management
 
 Tyson: Product Catalogue
 
