@@ -4,12 +4,17 @@
 * Shopping Cart
 * Transaction Processing  
 
-Jarryd:
+#### Jarryd:
 * Product Management
 
-Tyson: Product Catalogue
+#### Tyson: 
+* Product Catalogue
 
-Jacques: User Management
+#### Jacques: 
+* User Management
 
-Group: Design, Products, Reports
+#### Group: 
+* Design 
+* Products 
+* Reports
 
