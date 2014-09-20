@@ -31,6 +31,67 @@
 
     </head>
     <body>
+
+        <!-- navbar -->
+        <div class="navbar-wrapper">
+
+            <div class="container">
+
+                <div class="navbar navbar-inverse navbar-static-top" role="navigation" >
+
+                    <div class="container">
+
+                        <div class="navbar-header">
+
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <a class="navbar-brand" href="#">Kiff Co.</a>
+
+                        </div> <!-- end of navbar-header -->
+
+                        <div class="navbar-collapse collapse">
+
+                            <div class="right-inner-addon pull-right">
+
+                                <i class="fa fa-search"></i>
+                                <input type="search" class="form-control" placeholder="Search" />
+
+                            </div> <!-- end of search -->
+
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropwdown <span class="caret"></span></a>
+
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="dropdown-header">Social media</li>
+                                        <li><a href="#">Twitter</a></li>
+                                        <li><a href="#">Facebook</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div> <!-- end of navbar-collapse -->
+
+                    </div> <!-- end of container -->
+
+                </div> <!-- end of navbar -->
+
+            </div> <!-- end of container -->
+
+        </div> <!-- end of navbar-wrapper -->
+
+
+
         <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="body" runat="server">
@@ -38,5 +99,12 @@
             </asp:ContentPlaceHolder>
         </div>
         </form>
+
+
+        <!-- js scripts -->
+        <script src="Scripts/jquery-1.9.1.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+
+
     </body>
 </html>
