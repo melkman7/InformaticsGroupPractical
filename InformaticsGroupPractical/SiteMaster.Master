@@ -3,18 +3,40 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
+    <head runat="server">
+        <title>
+            <asp:ContentPlaceHolder ID="title" runat="server" >
+
+            </asp:ContentPlaceHolder>
+        </title>
+
+
+        <!-- meta tags -->
+        <meta name="viewport" content="width=device-width, initial scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="icon" href="#" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="Content/bootstrap.min.css" />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+
+        <!-- custom styles -->
+        <link rel="stylesheet" href="Content/style.css" />
+
+
+        <asp:ContentPlaceHolder ID="head" runat="server">
+
         </asp:ContentPlaceHolder>
-    </div>
-    </form>
-</body>
+
+    </head>
+    <body>
+        <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="body" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        </form>
+    </body>
 </html>
