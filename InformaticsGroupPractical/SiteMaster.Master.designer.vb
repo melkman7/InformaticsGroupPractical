@@ -32,6 +32,24 @@ Partial Public Class SiteMaster
     Protected WithEvents head As Global.System.Web.UI.WebControls.ContentPlaceHolder
 
     '''<summary>
+    '''user_username control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents user_username As Global.System.Web.UI.HtmlControls.HtmlInputText
+
+    '''<summary>
+    '''user_password control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents user_password As Global.System.Web.UI.HtmlControls.HtmlInputPassword
+
+    '''<summary>
     '''form1 control.
     '''</summary>
     '''<remarks>

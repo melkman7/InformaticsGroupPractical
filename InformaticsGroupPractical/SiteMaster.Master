@@ -56,7 +56,29 @@
 
                         <div class="navbar-collapse collapse">
 
-                            <div class="right-inner-addon pull-right">
+                            <div class="pull-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a></li>
+                                    <li class="nav-divider"></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign In <span class="caret"></span></a>
+
+                                        <div class="dropdown-menu" style="padding: 20px;">
+                                            <form>
+                                                <input id="user_username" style="margin-bottom: 20px;" type="text" name="user[username]" size="30" placeholder="Username" runat="server" />
+                                                <input id="user_password" style="margin-bottom: 20px;" type="password" name="user[password]" size="30" placeholder="Password" runat="server" />
+                                                <input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" runat="server" />
+                                            </form>
+                                        </div> 
+                                    
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+
+                           <!-- <div class="right-inner-addon pull-right">
 
                                 <i class="fa fa-search"></i>
                                 <input type="search" class="form-control" placeholder="Search" />
@@ -99,6 +121,43 @@
             </asp:ContentPlaceHolder>
         </div>
         </form>
+
+
+        <!-- sign up modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+                        <h4 class="modal-title" id="myModalLabel">Register</h4>
+
+                    </div> <!-- end modal header -->
+
+
+                    <div class="modal-body">
+                    
+                    
+                    
+                    </div> <!-- end of modal body -->
+
+
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button id="btnSignUp" type="button" class="btn btn-primary">Sign Up</button>
+
+                    </div> <!-- end of modal footer --> 
+
+                </div> <!-- end of modal content -->
+
+            </div> <!-- end of modal dialog -->
+
+        </div> <!-- end of signupModal -->
 
 
         <!-- js scripts -->
