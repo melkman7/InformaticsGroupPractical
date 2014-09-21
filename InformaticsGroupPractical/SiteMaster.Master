@@ -165,10 +165,27 @@
                         <form id="signupForm" role="form">
 
                             <div class="form-group">
+                                <label>Your name</label>
+                                <input id="txtFirstName" class="form-control" type="text" placeholder="First name" />
+                                <label></label>
+                                <input id="txtLastName" class="form-control" type="text" placeholder="Last name" /> 
+                            </div>
 
+                            <div class="form-group">
                                 <label for="txtEmail">Email address</label>
                                 <input id="txtEmail" class="form-control" type="text" placeholder="Enter email" /> 
+                            </div>
 
+                            <div class="form-group">
+                                <label for="txtUsername">Username</label>
+                                <input id="txtUsername" class="form-control" type="text" placeholder="Enter username" /> 
+                            </div>
+
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input id="txtPassword" class="form-control" type="password" placeholder="Enter password" />
+                                <label></label>
+                                <input id="txtPasswordConfirm" class="form-control" type="password" placeholder="Confirm password" /> 
                             </div>
 
                         </form> 
