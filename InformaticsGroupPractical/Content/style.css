@@ -63,3 +63,14 @@
         }
 
 }
+
+
+
+
+html { 
+  background: url(https://farm6.staticflickr.com/5105/5691656568_b72159319d_o.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
