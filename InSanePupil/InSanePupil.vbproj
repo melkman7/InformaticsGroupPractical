@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{EA88B4D7-018D-460D-BBA0-0F7C25840870}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>InSanePupil</RootNamespace>
+    <AssemblyName>InSanePupil</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>InSanePupil.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>InSanePupil.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\NewUser.aspx" />
+    <Content Include="Account\Reports.aspx" />
+    <Content Include="Account\ShippingAddress.aspx" />
+    <Content Include="App_Data\Mydatabase.mdf" />
+    <Content Include="App_Data\Mydatabase_log.ldf">
+      <DependentUpon>Mydatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="cart\AddTocart.aspx" />
+    <Content Include="cart\cart.aspx" />
+    <Content Include="fonts\Lato-Light.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="imgs\cart.png" />
+    <Content Include="imgs\catalogue\assissins_creed.jpg" />
+    <Content Include="imgs\catalogue\assissins_creed_P.png" />
+    <Content Include="imgs\catalogue\battleField.png" />
+    <Content Include="imgs\catalogue\battleField_P.png" />
+    <Content Include="imgs\catalogue\call_of_duty.jpg" />
+    <Content Include="imgs\catalogue\call_of_duty_P.png" />
+    <Content Include="imgs\catalogue\deadRising.png" />
+    <Content Include="imgs\catalogue\deadRising_P.png" />
+    <Content Include="imgs\catalogue\destiny.jpg" />
+    <Content Include="imgs\catalogue\evolve.jpg" />
+    <Content Include="imgs\catalogue\evolve_P.png" />
+    <Content Include="imgs\catalogue\forza2.jpg" />
+    <Content Include="imgs\catalogue\forza5.png" />
+    <Content Include="imgs\catalogue\forza5_P.png" />
+    <Content Include="imgs\catalogue\halo.jpg" />
+    <Content Include="imgs\catalogue\halo_P.png" />
+    <Content Include="imgs\catalogue\loco.png" />
+    <Content Include="imgs\catalogue\need_for_speed.png" />
+    <Content Include="imgs\catalogue\shadow_of_mordor.png" />
+    <Content Include="imgs\catalogue\spark.jpg" />
+    <Content Include="imgs\catalogue\the_devision.jpg" />
+    <Content Include="imgs\catalogue\titanFall.png" />
+    <Content Include="imgs\catalogue\tombRaider.png" />
+    <Content Include="imgs\catalogue\watchDogs.png" />
+    <Content Include="imgs\catalogue\witcher.png" />
+    <Content Include="imgs\catalogue\zombie_driver.png" />
+    <Content Include="imgs\details\assissins_creed.jpg" />
+    <Content Include="imgs\details\battleField.png" />
+    <Content Include="imgs\details\call_of_duty.jpg" />
+    <Content Include="imgs\details\deadRising.png" />
+    <Content Include="imgs\details\destiny.jpg" />
+    <Content Include="imgs\details\evolve.jpg" />
+    <Content Include="imgs\details\forza2.jpg" />
+    <Content Include="imgs\details\forza5.png" />
+    <Content Include="imgs\details\halo.jpg" />
+    <Content Include="imgs\details\loco.png" />
+    <Content Include="imgs\details\need_for_speed.png" />
+    <Content Include="imgs\details\shadow_of_mordor.png" />
+    <Content Include="imgs\details\spark.jpg" />
+    <Content Include="imgs\details\the_devision.jpg" />
+    <Content Include="imgs\details\titanFall.png" />
+    <Content Include="imgs\details\tombRaider.png" />
+    <Content Include="imgs\details\watchDogs.png" />
+    <Content Include="imgs\details\witcher.png" />
+    <Content Include="imgs\details\zombie_driver.png" />
+    <Content Include="imgs\form_bg.jpg" />
+    <Content Include="imgs\search.png" />
+    <Content Include="imgs\logo.png" />
+    <Content Include="imgs\shopping-cart.png" />
+    <Content Include="imgs\socialN\glyphicons_360_pinterest%402x.png" />
+    <Content Include="imgs\socialN\glyphicons_374_dribbble%402x.png" />
+    <Content Include="imgs\socialN\glyphicons_382_youtube%402x.png" />
+    <Content Include="imgs\socialN\glyphicons_386_google_plus%402x.png" />
+    <Content Include="imgs\socialN\glyphicons_390_facebook%402x.png" />
+    <Content Include="index.aspx" />
+    <Content Include="scripts\classie.js" />
+    <Content Include="scripts\jquery-1.11.1.min.js" />
+    <Content Include="scripts\modernizr.custom.js" />
+    <Content Include="styles\component.css" />
+    <Content Include="styles\main.css" />
+    <Content Include="styles\product.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\NewUser.aspx.designer.vb">
+      <DependentUpon>NewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\NewUser.aspx.vb">
+      <DependentUpon>NewUser.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Products.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Products.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Reports.aspx.designer.vb">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Reports.aspx.vb">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Secrecy.vb" />
+    <Compile Include="Account\ShippingAddress.aspx.designer.vb">
+      <DependentUpon>ShippingAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ShippingAddress.aspx.vb">
+      <DependentUpon>ShippingAddress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="cart\AddTocart.aspx.designer.vb">
+      <DependentUpon>AddTocart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart\AddTocart.aspx.vb">
+      <DependentUpon>AddTocart.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="cart\cart.aspx.designer.vb">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart\cart.aspx.vb">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="cart\CartItem.vb" />
+    <Compile Include="cart\Product.vb" />
+    <Compile Include="cart\ShoppingCart.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="main.Master.designer.vb">
+      <DependentUpon>main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="main.Master.vb">
+      <DependentUpon>main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Account\Report.rdlc" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="main.Master" />
+    <Content Include="fonts\Lato-Light.eot" />
+    <Content Include="fonts\Lato-Light.ttf" />
+    <Content Include="fonts\Lato-Light.woff" />
+    <Content Include="Account\Products.xsc">
+      <DependentUpon>Products.xsd</DependentUpon>
+    </Content>
+    <None Include="Account\Products.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Products.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Account\Products.xss">
+      <DependentUpon>Products.xsd</DependentUpon>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1216/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

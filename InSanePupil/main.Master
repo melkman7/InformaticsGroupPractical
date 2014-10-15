@@ -1,0 +1,131 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="main.master.vb" Inherits="InSanePupil.main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/component.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <script src="../scripts/jquery-1.11.1.min.js"></script>
+    <script src="../scripts/modernizr.custom.js"></script>
+
+    <script type="text/javascript"> <!--Jquery->
+    $(window).on("scroll touchmove", function () {
+        $('#header').toggleClass('tiny', $(document).scrollTop() > 0);
+    });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <header id="header">
+                <div id="left">
+                    <img src="../imgs/logo.png" />
+                </div>
+                <div id="center">
+                    <nav id="menu-bar">
+                        <ul id="menu">
+                            <li><a href="../index.aspx">Home</a></li>
+
+                            <li><a href="#">Xbox</a></li>
+                            <li><a href="#">Playstation</a></li>
+                            <li><a href="#">PC</a></li>
+                            <li><a href="#">Wii</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">
+                                <img style="height: 15px; width: 15px;" src="../imgs/search.png" /></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="right">
+                    <ul id="logon">
+                        <li><a id="login_link" href="#" runat="server">Sign In</a>
+
+                        </li>
+                        <li><a href="../cart/cart.aspx">Cart <i class="fa fa-shopping-cart fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+                <div id="logonFields" runat="server">
+                    <ul  style="margin-top: 100px; list-style: none;">
+                        <li>
+                            <div class="labels" style="color: #fff">Username</div>
+                            <asp:TextBox runat="server" ID="UserName" CssClass="UserName" Style="height: 25px; background-color: white; border-radius: 5px; border: 1px solid #808080;" />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="UserName"
+                                CssClass="field-validation-error" ErrorMessage="Username required." Style="color: #e45e5e;" />
+                        </li>
+                        <li>
+                            <div class="labels" style="color: #fff">Password</div>
+                            <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="Password" Style="height: 25px; background-color: white; border-radius: 5px; border: 1px solid #808080;" />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="Password"
+                                CssClass="field-validation-error" ErrorMessage="Password required." Style="color: #e45e5e;" />
+                        </li>
+                        <li>
+                            <%--<asp:HyperLink ID="HyperLink1" CssClass="pure-button pure-button-primary" runat="server">HyperLink</asp:HyperLink>--%>
+                            <asp:Button CssClass="loginButton" ID="loginButton" runat="server" CommandName="MoveNext" Text="Login" Style="border: 1px solid #808080; border-radius: 5px; width: 80px; height: 30px; color: #9a9795; background-color: transparent;" />
+                            <a id="registerLink" runat="server" href="~/Account/NewUser.aspx" style="text-decoration: none;">Register</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="logof" runat="server">
+                    <ul  style="margin-top: 100px; list-style: none;">
+                        <li>
+                            <a href="#" style="text-decoration: none;">User Account</a>
+                        </li>
+                        <li>
+                            <asp:Button CssClass="loginButton" ID="Button1" runat="server" CommandName="MoveNext" Text="Sign Off" Style="border: 1px solid #808080; border-radius: 5px; width: 80px; height: 30px; color: #9a9795; background-color: transparent; margin-top:10px;" />
+
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+
+            <section id="mainSection">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <footer id="mainFooter" class="mainFooter">
+                <div id="copyRight">Zone Inc. © 2014. All Rights Reserved </div>
+                <ul id="social">
+                    <li><a href="#">
+                        <img src="../imgs/socialN/glyphicons_386_google_plus@2x.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../imgs/socialN/glyphicons_390_facebook@2x.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../imgs/socialN/glyphicons_382_youtube@2x.png" />
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../imgs/socialN/glyphicons_360_pinterest@2x.png" /></a></li>
+                    <li><a href="#">
+                        <img src="../imgs/socialN/glyphicons_374_dribbble@2x.png" />
+                    </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </form>
+    <script src="../scripts/classie.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var menuRight = document.getElementById('cbp-spmenu-s2'),
+            showRight = document.getElementById('login_link'),
+            body = document.body;
+        showRight.onclick = function () {
+            classie.toggle(this, 'active');
+            classie.toggle(menuRight, 'cbp-spmenu-open');
+        };
+
+    </script>
+</body>
+</html>
