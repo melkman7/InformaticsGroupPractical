@@ -12,7 +12,7 @@
             <h1>Shipping Address</h1><hr />
 
             <div id="registration-form">
-
+                
                 <p>
                     <label for="no" class="w_225">Street No<span>&nbsp;*</span></label>
                     <asp:TextBox ID="no" CssClass="tb10" runat="server"></asp:TextBox>
